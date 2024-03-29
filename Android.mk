@@ -14,4 +14,5 @@ LOCAL_SRC_FILES := \
 LOCAL_CFLAGS += -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H
 LOCAL_MODULE:= libgif
 
+LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
 include $(BUILD_STATIC_LIBRARY)

@@ -1,0 +1,10 @@
+diff --git a/Android.mk b/Android.mk
+index 03a9355..13a93d0 100644
+--- a/Android.mk
++++ b/Android.mk
+@@ -14,4 +14,5 @@ LOCAL_SRC_FILES := \
+ LOCAL_CFLAGS += -Wno-format -Wno-sign-compare -Wno-unused-parameter -DHAVE_CONFIG_H
+ LOCAL_MODULE:= libgif
+
++LOCAL_EXPORT_C_INCLUDE_DIRS := $(LOCAL_PATH)
+ include $(BUILD_STATIC_LIBRARY)
